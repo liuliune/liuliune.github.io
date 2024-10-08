@@ -20,6 +20,20 @@
     </style>
 </head>
 <body>
+    <script>
+        function code() {
+        var code1 = Math.floor(Math.random()*100);
+        var code2 = Math.floor(Math.random()*100);
+        window.alert("为了防止黑客攻击，请先完成验证码！")
+        var codei = window.prompt("验证码："+code1+"×"+code2+"的结果？");
+        var codec = code1*code2;
+        if (codei != codec){
+            window.alert("你的验证码不对！请重试！")
+            code()
+        }
+        }
+        code()
+    </script>
     <h1>请单击下面的链接下载...</h1>
     <a href="杭州亚运会开幕式.sb3">杭州亚运会开幕式.sb3</a><br/>
     <a href="geek.exe">卸载软件</a><br/>
