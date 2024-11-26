@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到5fweb站点！</title>
+</head>
+<body>
+    欢迎来到5fweb站点！
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <button id="b">点击我跳转到指定的5f网址！</button>
+    <script>
+    document.getElementById('b').addEventListener('click', function() {
+    var url = prompt("请输入您想跳转的5f网站地址：");
+    location.replace("https://liuliune.github.io/5fweb/"+url);
+    });
+    </script>
+</body>
+</html>
